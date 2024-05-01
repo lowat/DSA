@@ -4,11 +4,11 @@ Solving data structure and algorithm problems and adding notes I learned from at
 ## Table of Contents
 | id | Link To Problem  | Category | Difficulty | Source |
 | -- | --  | -- | -- | -- |
-| [0](#contains-duplicate) | [LeetCode](https://leetcode.com/problems/3sum/)  | Arrays | Medium | Blind 75 | 
+| [0](#contains-duplicate) | [ContainsDuplicate](https://leetcode.com/problems/3sum/)  | Arrays | Medium | Blind 75 | 
 
 
 ### Contains Duplicate
-  - **Link To Problem**: [LeetCode](https://leetcode.com/problems/3sum/) 
+  - **Link To Problem**: [ContainsDuplicate](https://leetcode.com/problems/3sum/) 
   - **Category**: Arrays
   - **Difficulty**: Easy
   - **Source**: Blind 75
