@@ -25,3 +25,22 @@ Solving data structure and algorithm problems and adding notes I learned from at
     - **Code**
       -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/ContainsDuplicate/containsDuplicate.py)
       -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/ContainsDuplicate/containsDuplicate.go)
+
+### Valid Anagram
+  - **Link To Problem**: [ValidAnagram](https://leetcode.com/problems/valid-anagram/) 
+  - **Category**: Arrays
+  - **Difficulty**: Easy
+  - **Source**: Blind 75
+  - **Problem Notes**:
+    - **Input**: 2 strings
+    - **Ouput**: Boolean representing if strings are anagrams of each other
+    - **Clarifying Questions**:
+  - **Solution Notes**:
+    - **Steps**
+      1. One approach is to make 2 arrays of 26 and iterate each index when you come across that char
+      2. Other approach is to use a hashmap and build for each string, and then iterate through k,v and ensure they match. Also make sure lengths are same otherwise you might be missing a char that is on second hashmap
+    - **Time Complexity**: O(n)
+    - **Space Complexity**: O(1), bounded to length 26 if using char count array
+    - **Code**
+      -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/ValidAnagram/validAnagram.py)
+      -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/ValidAnagram/validAnagram.go)
