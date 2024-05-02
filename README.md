@@ -4,7 +4,8 @@ Solving data structure and algorithm problems and adding notes I learned from at
 ## Table of Contents
 | id | Link To Problem  | Category | Difficulty | Source |
 | -- | --  | -- | -- | -- |
-| [0](#contains-duplicate) | [ContainsDuplicate](https://leetcode.com/problems/3sum/)  | Arrays | Medium | Blind 75 | 
+| [0](#contains-duplicate) | [ContainsDuplicate](https://leetcode.com/problems/3sum/)  | Arrays | Easy | Blind 75 | 
+| [1](#valid-anagram) | [ValidAnagram](https://leetcode.com/problems/valid-anagram/)  | Arrays | Easy | Blind 75 | 
 
 
 ### Contains Duplicate
