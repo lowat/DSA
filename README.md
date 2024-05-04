@@ -6,7 +6,7 @@ Solving data structure and algorithm problems and adding notes I learned from at
 | -- | --  | -- | -- | -- |
 | [0](#contains-duplicate) | [ContainsDuplicate](https://leetcode.com/problems/contains-duplicate/)  | Arrays | Easy | Blind 75 | 
 | [1](#valid-anagram) | [ValidAnagram](https://leetcode.com/problems/valid-anagram/)  | Arrays | Easy | Blind 75 | 
-| [2](#two-sum) | [ValidAnagram](https://leetcode.com/problems/two-sum/)  | Arrays | Easy | Blind 75 | 
+| [2](#two-sum) | [TwoSum](https://leetcode.com/problems/two-sum/)  | Arrays | Easy | Blind 75 | 
 
 
 ### Contains Duplicate
