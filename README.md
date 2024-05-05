@@ -7,6 +7,7 @@ Solving data structure and algorithm problems and adding notes I learned from at
 | [0](#contains-duplicate) | [ContainsDuplicate](https://leetcode.com/problems/contains-duplicate/)  | Arrays | Easy | Blind 75 | 
 | [1](#valid-anagram) | [ValidAnagram](https://leetcode.com/problems/valid-anagram/)  | Arrays | Easy | Blind 75 | 
 | [2](#two-sum) | [TwoSum](https://leetcode.com/problems/two-sum/)  | Arrays | Easy | Blind 75 | 
+| [3](#group-anagrams) | [GroupAnagrams](https://leetcode.com/problems/group-anagrams/)  | Arrays | Medium | Blind 75 | 
 
 
 ### Contains Duplicate
@@ -67,3 +68,24 @@ Solving data structure and algorithm problems and adding notes I learned from at
     - **Code**
       -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/twoSum/twoSum.py)
       -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/twoSum/twoSum.go)
+
+### Group Anagrams
+  - **Link To Problem**: [Group Anagrams](https://leetcode.com/problems/group-anagrams/) 
+  - **Category**: Arrays
+  - **Difficulty**: Medium
+  - **Source**: Blind 75
+  - **Problem Notes**:
+    - **Input**: Array of Strings
+    - **Ouput**: 2D Array where each index of result is an array of words that are anagrams of each other
+    - **Clarifying Questions**:
+  - **Solution Notes**:
+    - **Steps**
+      1. Brute force way is to sort each string 
+      2. Better way is to take each string and determine the char count, since we are bounded to 26 lowercase letters this is more efficient than sorting
+      3. Check if  tuple(char count array) maps to existing key and append string, else start a new list for that key
+      4. Return dict values
+    - **Time Complexity**: O(n * m), where n is number of words and m is longest word
+    - **Space Complexity**: O(n), hash map would not contain more values then original number of words
+    - **Code**
+      -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/GroupAnagrams/groupAnagrams.py)
+      -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/GroupAnagrams/groupAnagrams.go)
