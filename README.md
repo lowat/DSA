@@ -8,7 +8,7 @@ Solving data structure and algorithm problems and adding notes I learned from at
 | [1](#valid-anagram) | [ValidAnagram](https://leetcode.com/problems/valid-anagram/)  | Arrays | Easy | Blind 75 | 
 | [2](#two-sum) | [TwoSum](https://leetcode.com/problems/two-sum/)  | Arrays | Easy | Blind 75 | 
 | [3](#group-anagrams) | [GroupAnagrams](https://leetcode.com/problems/group-anagrams/)  | Arrays | Medium | Blind 75 | 
-
+| [4](#top-k-freq-elements) | [TopKFreqElements](https://leetcode.com/problems/top-k-frequent-elements/)  | Arrays | Medium | Blind 75 | 
 
 ### Contains Duplicate
   - **Link To Problem**: [ContainsDuplicate](https://leetcode.com/problems/3sum/) 
@@ -89,3 +89,24 @@ Solving data structure and algorithm problems and adding notes I learned from at
     - **Code**
       -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/GroupAnagrams/groupAnagrams.py)
       -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/GroupAnagrams/groupAnagrams.go)
+
+
+### Top K Freq Elements
+  - **Link To Problem**: [TopKFreqElements](https://leetcode.com/problems/top-k-frequent-elements/)
+  - **Category**: Arrays
+  - **Difficulty**: Medium
+  - **Source**: Blind 75
+  - **Problem Notes**:
+    - **Input**: Array of Strings
+    - **Ouput**: 2D Array where each index of result is an array of words that are anagrams of each other
+    - **Clarifying Questions**:
+  - **Solution Notes**:
+    - **Steps**
+      1. Make hashmap of counts of all numbers in array
+      2. Make an array of array of len(original array) and iterate through hash maps and add values to the inner array at that index. Index 5 of outer array would contain array of numbers that occurred 5 times for example.
+      3. Build result while iterating backwards through freq array and adding values to res. Stop when arr length == k
+    - **Time Complexity**: O(n)
+    - **Space Complexity**: O(n)
+    - **Code**
+      -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/TopKFreqElements/topKFreqElements.py)
+      -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/TopKFreqElements/topKFreqElements.go)
