@@ -9,6 +9,7 @@ Solving data structure and algorithm problems and adding notes I learned from at
 | [2](#two-sum) | [TwoSum](https://leetcode.com/problems/two-sum/)  | Arrays | Easy | Blind 75 | 
 | [3](#group-anagrams) | [GroupAnagrams](https://leetcode.com/problems/group-anagrams/)  | Arrays | Medium | Blind 75 | 
 | [4](#top-k-freq-elements) | [TopKFreqElements](https://leetcode.com/problems/top-k-frequent-elements/)  | Arrays | Medium | Blind 75 | 
+| [5](#product-of-array-except-self) | [ProductOfArrayExceptSelf](https://leetcode.com/problems/product-of-array-except-self/)  | Arrays | Medium | Blind 75 | 
 
 ### Contains Duplicate
   - **Link To Problem**: [ContainsDuplicate](https://leetcode.com/problems/3sum/) 
@@ -97,8 +98,8 @@ Solving data structure and algorithm problems and adding notes I learned from at
   - **Difficulty**: Medium
   - **Source**: Blind 75
   - **Problem Notes**:
-    - **Input**: Array of Strings
-    - **Ouput**: 2D Array where each index of result is an array of words that are anagrams of each other
+    - **Input**: Array of Intergers
+    - **Ouput**: Array containing the K most freq elements
     - **Clarifying Questions**:
   - **Solution Notes**:
     - **Steps**
@@ -110,3 +111,26 @@ Solving data structure and algorithm problems and adding notes I learned from at
     - **Code**
       -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/TopKFreqElements/topKFreqElements.py)
       -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/TopKFreqElements/topKFreqElements.go)
+
+  
+### Product of Array Except Self
+  - **Link To Problem**: [ProductOfArrayExceptSelf](https://leetcode.com/problems/product-of-array-except-self/) 
+  - **Category**: Arrays
+  - **Difficulty**: Medium
+  - **Source**: Blind 75
+  - **Problem Notes**:
+    - **Input**: Array of Integer
+    - **Ouput**: Array of Integers where each index is the product of all other indexes except the current index
+    - **Clarifying Questions**:
+  - **Solution Notes**:
+    - **Steps**
+      1. Dynamic programming mindset
+      2. Make res arr of [1]'s
+      3. Iterate left to right and change each res value to the prevResValue * prevNum
+      4. Iterate right to left and maintain a separate postfix agg variable 
+      5. Res[i] *= postfix, postfix *= num[i]
+    - **Time Complexity**: O(n)
+    - **Space Complexity**: O(n)
+    - **Code**
+      -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/ProdArrExceptSelf/prodArrExceptSelf.py)
+      -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/ProdArrExceptSelf/prodArrExceptSelf.go)
