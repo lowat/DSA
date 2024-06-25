@@ -10,6 +10,7 @@ Solving data structure and algorithm problems and adding notes I learned from at
 | [3](#group-anagrams) | [GroupAnagrams](https://leetcode.com/problems/group-anagrams/)  | Arrays | Medium | Blind 75 | 
 | [4](#top-k-freq-elements) | [TopKFreqElements](https://leetcode.com/problems/top-k-frequent-elements/)  | Arrays | Medium | Blind 75 | 
 | [5](#product-of-array-except-self) | [ProductOfArrayExceptSelf](https://leetcode.com/problems/product-of-array-except-self/)  | Arrays | Medium | Blind 75 | 
+| [6](#encode-decode) | [EncodeDecode](https://leetcode.com/problems/encode-and-decode-strings/)  | Arrays | Medium | Blind 75 | 
 
 ### Contains Duplicate
   - **Link To Problem**: [ContainsDuplicate](https://leetcode.com/problems/3sum/) 
@@ -134,3 +135,25 @@ Solving data structure and algorithm problems and adding notes I learned from at
     - **Code**
       -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/ProdArrExceptSelf/prodArrExceptSelf.py)
       -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/ProdArrExceptSelf/prodArrExceptSelf.go)
+
+### Encode Decode
+  - **Link To Problem**: [EncodeDecode](https://leetcode.com/problems/encode-and-decode-strings/) 
+  - **Category**: Arrays
+  - **Difficulty**: Medium
+  - **Source**: Blind 75
+  - **Problem Notes**:
+    - **Input**: Array of Strings
+    - **Ouput**: Array of Strings, Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
+    - **Clarifying Questions**:
+  - **Solution Notes**:
+    - **Steps**
+      1. Len+#+str
+      2. join res
+      3. iterate until first #
+      4. use pointers and slicing to grab len of str
+      5. use slicing to grab str and append to result and then return"
+    - **Time Complexity**: O(n)
+    - **Space Complexity**: O(n)
+    - **Code**
+      -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/EncodeDecode/encodeDecode.py)
+      -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/EncodeDecode/encodeDecode.go)
