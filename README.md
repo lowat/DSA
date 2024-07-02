@@ -11,6 +11,7 @@ Solving data structure and algorithm problems and adding notes I learned from at
 | [4](#top-k-freq-elements) | [TopKFreqElements](https://leetcode.com/problems/top-k-frequent-elements/)  | Arrays | Medium | Blind 75 | 
 | [5](#product-of-array-except-self) | [ProductOfArrayExceptSelf](https://leetcode.com/problems/product-of-array-except-self/)  | Arrays | Medium | Blind 75 | 
 | [6](#encode-decode) | [EncodeDecode](https://leetcode.com/problems/encode-and-decode-strings/)  | Arrays | Medium | Blind 75 | 
+| [7](#longest-consecutive-sequence) | [LongestConsecSeq](https://leetcode.com/problems/longest-consecutive-sequence/)   | Arrays | Medium | Blind 75 | 
 
 ### Contains Duplicate
   - **Link To Problem**: [ContainsDuplicate](https://leetcode.com/problems/3sum/) 
@@ -157,3 +158,23 @@ Solving data structure and algorithm problems and adding notes I learned from at
     - **Code**
       -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/EncodeDecode/encodeDecode.py)
       -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/EncodeDecode/encodeDecode.go)
+
+### Longest Consecutive Sequence
+  - **Link To Problem**: [LongestConsecSeq](https://leetcode.com/problems/longest-consecutive-sequence/) 
+  - **Category**: Arrays
+  - **Difficulty**: Medium
+  - **Source**: Blind 75
+  - **Problem Notes**:
+    - **Input**: Array of Ints
+    - **Ouput**: Integer representing the longest sequence of consecutive nums
+    - **Clarifying Questions**:
+  - **Solution Notes**:
+    - **Steps**
+      1. Consider that if we make a set, any sequence beginning will not have n-1 in the set. otherwise it is part of an existing sequence
+      2. If we do find a sequence start iterate while that num + the sequence length is in set
+      3. When loop breaks just take max(maxsofar, currSeqLength)
+    - **Time Complexity**: O(n)
+    - **Space Complexity**: O(n)
+    - **Code**
+      -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/LongestConsecSeq/LongestConsecSeq.py)
+      -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/LongestConsecSeq/LongestConsecSeq.go)
