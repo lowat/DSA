@@ -12,6 +12,7 @@ Solving data structure and algorithm problems and adding notes I learned from at
 | [5](#product-of-array-except-self) | [ProductOfArrayExceptSelf](https://leetcode.com/problems/product-of-array-except-self/)  | Arrays | Medium | Blind 75 | 
 | [6](#encode-decode) | [EncodeDecode](https://leetcode.com/problems/encode-and-decode-strings/)  | Arrays | Medium | Blind 75 | 
 | [7](#longest-consecutive-sequence) | [LongestConsecSeq](https://leetcode.com/problems/longest-consecutive-sequence/)   | Arrays | Medium | Blind 75 | 
+| [8](#valid-palindrome) | [ValidPalindrome](https://leetcode.com/problems/valid-palindrome/)   | Two Pointers | Easy | Blind 75 | 
 
 ### Contains Duplicate
   - **Link To Problem**: [ContainsDuplicate](https://leetcode.com/problems/3sum/) 
@@ -178,3 +179,22 @@ Solving data structure and algorithm problems and adding notes I learned from at
     - **Code**
       -  [Python](https://github.com/lowat/DSA/blob/main/Arrays/LongestConsecSeq/LongestConsecSeq.py)
       -  [Go](https://github.com/lowat/DSA/blob/main/Arrays/LongestConsecSeq/LongestConsecSeq.go)
+
+### Valid Palindrome
+  - **Link To Problem**: [ValidPalindrome](https://leetcode.com/problems/valid-palindrome/)
+  - **Category**: Two Pointers
+  - **Difficulty**: Easy
+  - **Source**: Blind 75
+  - **Problem Notes**:
+    - **Input**: String
+    - **Ouput**: True/False depending on if string is valid palindrome. Need to remove non alpha numeric characters.
+    - **Clarifying Questions**:
+  - **Solution Notes**:
+    - **Steps**
+      1. Clean string
+      2. l, r pointer converging to middle. If they dont equal then it is not palindrome
+    - **Time Complexity**: O(n)
+    - **Space Complexity**: O(1)
+    - **Code**
+      -  [Python](https://github.com/lowat/DSA/blob/main/TwoPointers/ValidPalindrome/ValidPalindrome.py)
+      -  [Go](https://github.com/lowat/DSA/blob/main/TwoPointers/ValidPalindrome/ValidPalindrome.go)
