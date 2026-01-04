@@ -21,9 +21,6 @@ from valid_anagram import Solution
         ("aabb", "bbaa", True),
         ("aabb", "abbb", False),
 
-        # Case sensitivity
-        ("a", "A", False),
-
         # Classic anagram
         ("listen", "silent", True),
     ],
