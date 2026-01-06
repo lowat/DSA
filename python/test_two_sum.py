@@ -23,10 +23,10 @@ from two_sum import Solution
         ([0, 4, 3, 0], 0, [0, 3]),
 
         # Larger array
-        ([1, 5, 7, 2, 8, 11], 9, [1, 3]),
+        ([1, 5, 7, 2, 8, 11], 9, [2, 3]),
     ]
 )
 
 def test_is_anagram(nums, target, expected):
     sol = Solution()
-    assert sol.two_sum(nums, target) == expected
+    assert sorted(sol.two_sum(nums, target)) == sorted(expected)
